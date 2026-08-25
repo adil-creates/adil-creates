@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="purpleGlowLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; font-size: 14px; fill: #475569; }
+    .header-tag { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; fill: #0891B2; font-weight: bold; letter-spacing: 1.5px; }
+    .label { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13.5px; fill: #0891B2; font-weight: 600; }
+    .dots { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13.5px; fill: #CBD5E1; }
+    .val { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13.5px; fill: #0F172A; font-weight: 500; }
+    .val-accent { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13.5px; fill: #059669; font-weight: 600; }
+    .val-purple { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13.5px; fill: #7C3AED; font-weight: 600; }
+    .pill { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; fill: #0891B2; font-weight: 600; }
+    .live-text { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 11px; fill: #DC2626; font-weight: 800; letter-spacing: 1px; }
+    .node-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #0F172A; text-anchor: middle; font-weight: 600; }
+    .sub-node-text { font-family: 'JetBrains Mono', monospace; font-size: 9px; fill: #64748B; text-anchor: middle; }
+  </style>
+
+  <!-- Window Container -->
+  <rect x="0" y="0" width="1180" height="610" rx="14" fill="url(#lightBg)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="1180" height="42" rx="14" fill="#E2E8F0"/>
+  <rect x="0" y="32" width="1180" height="10" fill="#E2E8F0"/>
+  <line x1="0" y1="42" x2="1180" y2="42" stroke="#CBD5E1" stroke-width="1"/>
+
+  <!-- Window Controls -->
+  <circle cx="24" cy="21" r="6" fill="#EF4444"/>
+  <circle cx="44" cy="21" r="6" fill="#F59E0B"/>
+  <circle cx="64" cy="21" r="6" fill="#10B981"/>
+
+  <!-- Window Title -->
+  <text x="590" y="26" text-anchor="middle" class="title">profile.sh --live</text>
+
+  <!-- Handle Pill & LIVE status -->
+  <g transform="translate(1000, 10)">
+    <rect x="0" y="0" width="158" height="22" rx="11" fill="#FFFFFF" stroke="#0891B2" stroke-width="1"/>
+    <!-- Pulsing Live Dot -->
+    <circle cx="15" cy="11" r="4" fill="#DC2626">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="26" y="15" class="live-text">LIVE</text>
+    <line x1="58" y1="4" x2="58" y2="18" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="68" y="15" class="pill">@adil-creates</text>
+  </g>
+
+  <!-- Left Frame: VISUAL.MAP (38%) -->
+  <g transform="translate(24, 60)">
+    <rect x="0" y="0" width="410" height="525" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="0" y="0" width="410" height="32" rx="8" fill="#F1F5F9"/>
+    <rect x="0" y="24" width="410" height="8" fill="#F1F5F9"/>
+    <line x1="0" y1="32" x2="410" y2="32" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="16" y="21" class="header-tag">VISUAL.MAP // AI_AGENT_RUNTIME</text>
+
+    <!-- Grid Lines Background in Visual Map -->
+    <g opacity="0.4">
+      <line x1="20" y1="60" x2="390" y2="60" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="20" y1="120" x2="390" y2="120" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="20" y1="180" x2="390" y2="180" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="20" y1="240" x2="390" y2="240" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="20" y1="300" x2="390" y2="300" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="20" y1="360" x2="390" y2="360" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="20" y1="420" x2="390" y2="420" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="20" y1="480" x2="390" y2="480" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <line x1="80" y1="40" x2="80" y2="505" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="160" y1="40" x2="160" y2="505" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="240" y1="40" x2="240" y2="505" stroke="#E2E8F0" stroke-width="1"/>
+      <line x1="320" y1="40" x2="320" y2="505" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+
+    <!-- Connection Pipelines -->
+    <!-- Input to Router -->
+    <path d="M 205 90 L 205 140" stroke="#0891B2" stroke-width="2" stroke-dasharray="4,4"/>
+    
+    <!-- Router to Sub-Agents -->
+    <path d="M 205 190 L 95 250" stroke="#7C3AED" stroke-width="1.5"/>
+    <path d="M 205 190 L 205 250" stroke="#059669" stroke-width="1.5"/>
+    <path d="M 205 190 L 315 250" stroke="#0284C7" stroke-width="1.5"/>
+
+    <!-- Sub-Agents to Tools/Memory -->
+    <path d="M 95 300 L 95 360" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <path d="M 205 300 L 205 360" stroke="#059669" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <path d="M 315 300 L 315 360" stroke="#0284C7" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <!-- Tools to Output Production -->
+    <path d="M 95 410 L 170 460" stroke="#7C3AED" stroke-width="1.5"/>
+    <path d="M 205 410 L 205 460" stroke="#059669" stroke-width="2"/>
+    <path d="M 315 410 L 240 460" stroke="#0284C7" stroke-width="1.5"/>
+
+    <!-- Node: Input Trigger -->
+    <g transform="translate(130, 55)">
+      <rect x="0" y="0" width="150" height="36" rx="6" fill="#F0FDFA" stroke="#0891B2" stroke-width="1.5"/>
+      <text x="75" y="18" class="node-text">USER / WEBHOOK</text>
+      <text x="75" y="29" class="sub-node-text">Event Input Stream</text>
+    </g>
+
+    <!-- Node: AI Router Orchestrator (Main Hub) -->
+    <g transform="translate(115, 140)">
+      <rect x="0" y="0" width="180" height="50" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2"/>
+      <text x="90" y="22" class="node-text" fill="#6D28D9">ROUTER AGENT</text>
+      <text x="90" y="38" class="sub-node-text" fill="#4B5563">LLM Reasoning &amp; Triage</text>
+    </g>
+
+    <!-- Node: Sub-Agent 1 (Researcher / Scraper) -->
+    <g transform="translate(30, 250)">
+      <rect x="0" y="0" width="130" height="48" rx="6" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.2"/>
+      <text x="65" y="20" class="node-text">DATA AGENT</text>
+      <text x="65" y="36" class="sub-node-text">Scraping / Context</text>
+    </g>
+
+    <!-- Node: Sub-Agent 2 (Execution / Reasoning) -->
+    <g transform="translate(145, 250)">
+      <rect x="0" y="0" width="120" height="48" rx="6" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+      <text x="60" y="20" class="node-text" fill="#047857">ACTION AGENT</text>
+      <text x="60" y="36" class="sub-node-text">Autonomous Loop</text>
+    </g>
+
+    <!-- Node: Sub-Agent 3 (Voice / Chat) -->
+    <g transform="translate(255, 250)">
+      <rect x="0" y="0" width="125" height="48" rx="6" fill="#F0F9FF" stroke="#0284C7" stroke-width="1.2"/>
+      <text x="62" y="20" class="node-text">VOICE/CHAT</text>
+      <text x="62" y="36" class="sub-node-text">Real-time Stream</text>
+    </g>
+
+    <!-- Tools / DB Layer -->
+    <g transform="translate(30, 360)">
+      <rect x="0" y="0" width="130" height="46" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="65" y="20" class="node-text" fill="#475569">VECTOR DB / RAG</text>
+      <text x="65" y="34" class="sub-node-text">Semantic Memory</text>
+    </g>
+
+    <g transform="translate(145, 360)">
+      <rect x="0" y="0" width="120" height="46" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="60" y="20" class="node-text" fill="#475569">TOOL CALLING</text>
+      <text x="60" y="34" class="sub-node-text">APIs / Webhooks</text>
+    </g>
+
+    <g transform="translate(255, 360)">
+      <rect x="0" y="0" width="125" height="46" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+      <text x="62" y="20" class="node-text" fill="#475569">CRM / EMAIL</text>
+      <text x="62" y="34" class="sub-node-text">Automated Outreach</text>
+    </g>
+
+    <!-- Production App Destination -->
+    <g transform="translate(115, 460)">
+      <rect x="0" y="0" width="180" height="48" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+      <text x="90" y="22" class="node-text" fill="#047857">PRODUCTION APPS</text>
+      <text x="90" y="38" class="sub-node-text" fill="#065F46">Next.js • Three.js • FastAPIs</text>
+    </g>
+  </g>
+
+  <!-- Right Frame: SYSTEM.INFO (62%) -->
+  <g transform="translate(450, 60)">
+    <rect x="0" y="0" width="706" height="525" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="0" y="0" width="706" height="32" rx="8" fill="#F1F5F9"/>
+    <rect x="0" y="24" width="706" height="8" fill="#F1F5F9"/>
+    <line x1="0" y1="32" x2="706" y2="32" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="20" y="21" class="header-tag">SYSTEM.INFO // SPECIFICATION_READOUT</text>
+
+    <!-- Metadata Rows with computed dotted leaders -->
+    <!-- Row 1: Subject -->
+    <g transform="translate(24, 68)">
+      <text x="0" y="0" class="label">Subject</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val">Md Adil</text>
+    </g>
+
+    <!-- Row 2: Role -->
+    <g transform="translate(24, 102)">
+      <text x="0" y="0" class="label">Role</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val-accent">AI Agent &amp; Full-Stack Systems Engineer</text>
+    </g>
+
+    <!-- Row 3: Origin -->
+    <g transform="translate(24, 136)">
+      <text x="0" y="0" class="label">Origin</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val">Remote / EU Timezone Aligned</text>
+    </g>
+
+    <!-- Row 4: Status -->
+    <g transform="translate(24, 170)">
+      <text x="0" y="0" class="label">Status</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val-accent">Building + Learning + Shipping</text>
+    </g>
+
+    <!-- Row 5: ToolChain -->
+    <g transform="translate(24, 204)">
+      <text x="0" y="0" class="label">ToolChain</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val">VS Code • Git • Docker • Postman • Figma</text>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="20" y1="228" x2="686" y2="228" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Row 6: Core.Lang -->
+    <g transform="translate(24, 256)">
+      <text x="0" y="0" class="label">Core.Lang</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val-purple">Python • TypeScript • JavaScript • PHP • SQL</text>
+    </g>
+
+    <!-- Row 7: Core.Frontend -->
+    <g transform="translate(24, 290)">
+      <text x="0" y="0" class="label">Core.Frontend</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val">Next.js • React • Tailwind CSS • Three.js</text>
+    </g>
+
+    <!-- Row 8: Core.Backend -->
+    <g transform="translate(24, 324)">
+      <text x="0" y="0" class="label">Core.Backend</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val">Node.js • FastAPI • PHP • REST • Webhooks</text>
+    </g>
+
+    <!-- Row 9: Core.AI -->
+    <g transform="translate(24, 358)">
+      <text x="0" y="0" class="label">Core.AI</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val-accent">Autonomous Agents • Tool Calling • RAG • n8n</text>
+    </g>
+
+    <!-- Row 10: Core.Database -->
+    <g transform="translate(24, 392)">
+      <text x="0" y="0" class="label">Core.Database</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val">PostgreSQL • MySQL • Redis • Supabase</text>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="20" y1="416" x2="686" y2="416" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Row 11: Grid.LinkedIn -->
+    <g transform="translate(24, 444)">
+      <text x="0" y="0" class="label">Grid.LinkedIn</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val-purple">linkedin.com/in/adil-ai-builds</text>
+    </g>
+
+    <!-- Row 12: Grid.GitHub -->
+    <g transform="translate(24, 478)">
+      <text x="0" y="0" class="label">Grid.GitHub</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val">github.com/adil-creates</text>
+    </g>
+
+    <!-- Row 13: Grid.Mail -->
+    <g transform="translate(24, 510)">
+      <text x="0" y="0" class="label">Grid.Mail</text>
+      <text x="145" y="0" class="dots">......................................................</text>
+      <text x="658" y="0" text-anchor="end" class="val-accent">adil.aibuilds@gmail.com</text>
+    </g>
+  </g>
+</svg>
